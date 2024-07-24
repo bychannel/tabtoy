@@ -2,21 +2,21 @@ package main
 
 import (
 	"flag"
-	"github.com/davyxu/tabtoy/build"
-	"github.com/davyxu/tabtoy/v3/compiler"
-	"github.com/davyxu/tabtoy/v3/gen"
-	"github.com/davyxu/tabtoy/v3/gen/bindata"
-	"github.com/davyxu/tabtoy/v3/gen/cssrc"
-	"github.com/davyxu/tabtoy/v3/gen/gosrc"
-	"github.com/davyxu/tabtoy/v3/gen/javasrc"
-	"github.com/davyxu/tabtoy/v3/gen/jsondata"
-	"github.com/davyxu/tabtoy/v3/gen/jsontype"
-	"github.com/davyxu/tabtoy/v3/gen/luasrc"
-	"github.com/davyxu/tabtoy/v3/gen/pbdata"
-	"github.com/davyxu/tabtoy/v3/gen/pbsrc"
-	"github.com/davyxu/tabtoy/v3/helper"
-	"github.com/davyxu/tabtoy/v3/model"
-	"github.com/davyxu/tabtoy/v3/report"
+	"github.com/bychannel/tabtoy/build"
+	"github.com/bychannel/tabtoy/v3/compiler"
+	"github.com/bychannel/tabtoy/v3/gen"
+	"github.com/bychannel/tabtoy/v3/gen/bindata"
+	"github.com/bychannel/tabtoy/v3/gen/cssrc"
+	"github.com/bychannel/tabtoy/v3/gen/gosrc"
+	"github.com/bychannel/tabtoy/v3/gen/javasrc"
+	"github.com/bychannel/tabtoy/v3/gen/jsondata"
+	"github.com/bychannel/tabtoy/v3/gen/jsontype"
+	"github.com/bychannel/tabtoy/v3/gen/luasrc"
+	"github.com/bychannel/tabtoy/v3/gen/pbdata"
+	"github.com/bychannel/tabtoy/v3/gen/pbsrc"
+	"github.com/bychannel/tabtoy/v3/helper"
+	"github.com/bychannel/tabtoy/v3/model"
+	"github.com/bychannel/tabtoy/v3/report"
 	"os"
 )
 
@@ -106,6 +106,7 @@ func GenFileByList(globals *model.Globals) error {
 func V3Entry() {
 	globals := model.NewGlobals()
 	globals.Version = build.Version
+	globals.ToolName = "github.com/bychannel/tabtoy"
 	globals.ParaLoading = *paramPara
 	if *paramUseCache {
 		globals.CacheDir = *paramCacheDir

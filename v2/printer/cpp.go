@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"text/template"
 
-	"github.com/davyxu/tabtoy/v2/i18n"
-	"github.com/davyxu/tabtoy/v2/model"
+	"github.com/bychannel/tabtoy/v2/i18n"
+	"github.com/bychannel/tabtoy/v2/model"
 	"strings"
 )
 
@@ -236,7 +236,7 @@ func (self cppField) ReadCode() string {
 
 	if self.Type == model.FieldType_Struct {
 		descHandlerCode = "Deserialize"
-		//descHandlerCode = fmt.Sprintf("%sDeserializeHandler", self.Complex.Name)
+		// descHandlerCode = fmt.Sprintf("%sDeserializeHandler", self.Complex.Name)
 	}
 
 	if self.IsRepeated {

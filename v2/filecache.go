@@ -1,8 +1,8 @@
 package v2
 
 import (
-	"github.com/davyxu/tabtoy/v2/i18n"
-	"github.com/davyxu/tabtoy/v2/printer"
+	"github.com/bychannel/tabtoy/v2/i18n"
+	"github.com/bychannel/tabtoy/v2/printer"
 	"os"
 	"path/filepath"
 	"strings"
@@ -77,10 +77,10 @@ func cacheFile(g *printer.Globals) (fileObjByName map[string]*File) {
 	task.Wait()
 
 	// 调试用
-	//for _, filename := range filelist {
+	// for _, filename := range filelist {
 	//
 	//	writeOK(filename)
-	//}
+	// }
 
 	return
 }

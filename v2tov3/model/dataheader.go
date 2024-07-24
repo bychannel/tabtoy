@@ -1,8 +1,8 @@
 package model
 
 import (
+	"github.com/bychannel/tabtoy/v3/model"
 	"github.com/davyxu/golexer"
-	"github.com/davyxu/tabtoy/v3/model"
 )
 
 type ObjectFieldType struct {
@@ -15,20 +15,20 @@ func (self *ObjectFieldType) IsArray() bool {
 }
 
 //
-//import (
+// import (
 //	"fmt"
 //	"github.com/davyxu/golexer"
-//)
+// )
 //
-//type FieldKind int
+// type FieldKind int
 //
-//const (
+// const (
 //	FieldKind_Primitive FieldKind = 0
 //	FieldKind_Enum                = 1
 //	FieldKind_Struct              = 2
-//)
+// )
 //
-//type ObjectFieldType struct {
+// type ObjectFieldType struct {
 //	ObjectType string
 //	FieldName  string
 //	FieldType  string // 去掉[]
@@ -38,9 +38,9 @@ func (self *ObjectFieldType) IsArray() bool {
 //	Meta *golexer.KVPair
 //
 //	Comment string
-//}
+// }
 //
-//func (self *ObjectFieldType) String() string {
+// func (self *ObjectFieldType) String() string {
 //
 //	return fmt.Sprintf("Object:%s Name: %s Type: %s IsArray: %v Kind: %v Comment: %s",
 //		self.ObjectType,
@@ -50,4 +50,4 @@ func (self *ObjectFieldType) IsArray() bool {
 //		self.Kind,
 //		self.Comment)
 //
-//}
+// }

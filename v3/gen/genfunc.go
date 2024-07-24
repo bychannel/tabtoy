@@ -1,6 +1,6 @@
 package gen
 
-import "github.com/davyxu/tabtoy/v3/model"
+import "github.com/bychannel/tabtoy/v3/model"
 
 type GenSingleFile func(globals *model.Globals) (data []byte, err error)
 

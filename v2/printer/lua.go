@@ -3,9 +3,9 @@ package printer
 import (
 	"fmt"
 
-	"github.com/davyxu/tabtoy/util"
-	"github.com/davyxu/tabtoy/v2/i18n"
-	"github.com/davyxu/tabtoy/v2/model"
+	"github.com/bychannel/tabtoy/util"
+	"github.com/bychannel/tabtoy/v2/i18n"
+	"github.com/bychannel/tabtoy/v2/model"
 )
 
 func valueWrapperLua(g *Globals, t model.FieldType, n *model.Node) string {

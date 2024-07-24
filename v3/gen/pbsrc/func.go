@@ -2,7 +2,7 @@ package pbsrc
 
 import (
 	"fmt"
-	"github.com/davyxu/tabtoy/v3/model"
+	"github.com/bychannel/tabtoy/v3/model"
 	"strings"
 	"text/template"
 )

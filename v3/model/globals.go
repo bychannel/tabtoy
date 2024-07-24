@@ -1,11 +1,12 @@
 package model
 
 import (
-	"github.com/davyxu/tabtoy/v3/helper"
+	"github.com/bychannel/tabtoy/v3/helper"
 )
 
 type Globals struct {
 	Version           string // 工具版本号
+	ToolName          string // 工具包名
 	IndexFile         string // 指示文件
 	PackageName       string // 文件生成时的包名
 	CombineStructName string // 包含最终表所有数据的根结构

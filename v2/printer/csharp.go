@@ -6,8 +6,8 @@ import (
 
 	"bytes"
 	"crypto/md5"
-	"github.com/davyxu/tabtoy/v2/i18n"
-	"github.com/davyxu/tabtoy/v2/model"
+	"github.com/bychannel/tabtoy/v2/i18n"
+	"github.com/bychannel/tabtoy/v2/model"
 	"strings"
 )
 

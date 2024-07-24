@@ -1,9 +1,9 @@
 package v2
 
 import (
-	"github.com/davyxu/tabtoy/util"
-	"github.com/davyxu/tabtoy/v2/i18n"
-	"github.com/davyxu/tabtoy/v2/model"
+	"github.com/bychannel/tabtoy/util"
+	"github.com/bychannel/tabtoy/v2/i18n"
+	"github.com/bychannel/tabtoy/v2/model"
 )
 
 /*
@@ -82,7 +82,7 @@ func (self *TypeSheet) parseTable(root *typeModelRoot) bool {
 
 		} else {
 
-			//已经碰过空行, 这里又碰到数据, 说明有人为隔出的空行, 做warning提醒, 防止数据没导出
+			// 已经碰过空行, 这里又碰到数据, 说明有人为隔出的空行, 做warning提醒, 防止数据没导出
 			if meetEmptyLine && !warningAfterEmptyLineDataOnce {
 				log.Errorf("%s %s|%s(%s)", i18n.String(i18n.TypeSheet_RowDataSplitedByEmptyLine), self.file.FileName, self.Name, util.R1C1ToA1(row, 1))
 

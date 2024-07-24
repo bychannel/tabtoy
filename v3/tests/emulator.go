@@ -2,12 +2,12 @@ package tests
 
 import (
 	"encoding/json"
-	"github.com/davyxu/tabtoy/v3/compiler"
-	"github.com/davyxu/tabtoy/v3/gen"
-	"github.com/davyxu/tabtoy/v3/gen/gosrc"
-	"github.com/davyxu/tabtoy/v3/gen/jsondata"
-	"github.com/davyxu/tabtoy/v3/helper"
-	"github.com/davyxu/tabtoy/v3/model"
+	"github.com/bychannel/tabtoy/v3/compiler"
+	"github.com/bychannel/tabtoy/v3/gen"
+	"github.com/bychannel/tabtoy/v3/gen/gosrc"
+	"github.com/bychannel/tabtoy/v3/gen/jsondata"
+	"github.com/bychannel/tabtoy/v3/helper"
+	"github.com/bychannel/tabtoy/v3/model"
 	"io/ioutil"
 	"path/filepath"
 	"reflect"

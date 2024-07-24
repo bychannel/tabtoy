@@ -2,9 +2,9 @@ package cssrc
 
 import (
 	"fmt"
-	"github.com/davyxu/tabtoy/util"
-	"github.com/davyxu/tabtoy/v3/gen/bindata"
-	"github.com/davyxu/tabtoy/v3/model"
+	"github.com/bychannel/tabtoy/util"
+	"github.com/bychannel/tabtoy/v3/gen/bindata"
+	"github.com/bychannel/tabtoy/v3/model"
 	"text/template"
 )
 

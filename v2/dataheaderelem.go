@@ -1,8 +1,8 @@
 package v2
 
 import (
-	"github.com/davyxu/tabtoy/v2/i18n"
-	"github.com/davyxu/tabtoy/v2/model"
+	"github.com/bychannel/tabtoy/v2/i18n"
+	"github.com/bychannel/tabtoy/v2/model"
 	"strings"
 )
 
@@ -17,12 +17,12 @@ func checkElement(def *model.FieldDescriptor) int {
 	// 普通表头合法性检查
 
 	// 结构体单元格不能进行切分
-	//if def.Type == model.FieldType_Struct && def.ListSpliter() != "" {
+	// if def.Type == model.FieldType_Struct && def.ListSpliter() != "" {
 	//
 	//	log.Errorf("%s '%s'", i18n.String(i18n.DataHeader_StructCellCannotSplit),
 	//		def.Name)
 	//	return DataSheetHeader_FieldMeta
-	//}
+	// }
 
 	return -1
 }

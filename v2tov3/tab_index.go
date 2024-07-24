@@ -1,9 +1,9 @@
 package v2tov3
 
 import (
-	"github.com/davyxu/tabtoy/util"
-	"github.com/davyxu/tabtoy/v2tov3/model"
-	"github.com/davyxu/tabtoy/v3/helper"
+	"github.com/bychannel/tabtoy/util"
+	"github.com/bychannel/tabtoy/v2tov3/model"
+	"github.com/bychannel/tabtoy/v3/helper"
 	"sort"
 )
 
