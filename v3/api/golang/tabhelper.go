@@ -27,16 +27,14 @@ func LoadFromFile(tab Table, filename string) error {
 }
 
 func LoadFromData(tab Table, data []byte) error {
-	// 重置数据，这里会触发Prehandler
+	// 重置数据，这里会触发PreHandler
 	err := tab.ResetData()
-
 	if err != nil {
 		return err
 	}
 
 	// 使用json反序列化
 	err = json.Unmarshal(data, tab)
-
 	if err != nil {
 		return err
 	}
